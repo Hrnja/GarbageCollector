@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/simple_background"
+        tools:context=".PickControl">
+
+    <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/system_green"
+            android:layout_marginRight="20dp"
+    >
+
+        <ImageView
+                android:id="@+id/showuser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_baseline_supervised_user_circle_24"
+        />
+
+    </RelativeLayout>
+
+    <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    <RelativeLayout
+            android:id="@+id/RelativeLayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            >
+
+
+    <TextView
+            android:id="@+id/welcome_user"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+    />
+
+    <TextView
+            android:id="@+id/connectToWiFi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_user"
+            android:text="Before you choose control,\n
+            please press connect button to connect your application on robot WiFi"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+    />
+
+    <Button
+            android:id="@+id/connectButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/connectToWiFi"
+            android:text="Connect"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+    />
+
+
+    <TextView
+            android:id="@+id/choose_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/connectButton"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/choose_control"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+    />
+
+    <Button
+            android:id="@+id/automatic_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choose_control"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/automatic"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+    />
+
+
+    <Button
+            android:id="@+id/manual_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/automatic_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/manual"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+    />
+    </RelativeLayout>
+
+</RelativeLayout>

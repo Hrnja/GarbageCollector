@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+
+>
+
+    <TextView
+            android:id="@+id/recViewName"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:paddingLeft="0dp"
+            android:textColor="@color/white"
+            />
+
+    <TextView
+            android:id="@+id/recViewDate"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text=""
+            android:layout_marginStart="80dp"
+            />
+
+    <TextView
+            android:id="@+id/recViewTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="230dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            />
+
+</androidx.cardview.widget.CardView>
