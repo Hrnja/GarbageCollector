@@ -1,5 +1,5 @@
 # Garbage Collector
-IoT system programmed with SOC
+IoT system with SOC
 
 
 Specification:
